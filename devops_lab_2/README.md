@@ -9,7 +9,14 @@
 ## Выполнение  работы:
 Создаем самый простой python файл, с которым будем работать:
 
+![2 1](https://github.com/user-attachments/assets/e8d446b8-2b3d-4693-85b2-0fd84ccdf82a)
+
 Далее пишем плохой Dockerfile:
+![2 2](https://github.com/user-attachments/assets/f0aaf1ed-314a-4018-8942-fd2f1697a3df)
+
+![2 3](https://github.com/user-attachments/assets/1aa881dd-f1ae-4e38-b655-fe6223c8f50c)
+![уф (2)](https://github.com/user-attachments/assets/768bf1a4-d73d-4ad2-bb16-3d3d876f986f)
+
 
 Все ок, он запускается)
 
