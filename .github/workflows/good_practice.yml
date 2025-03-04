@@ -10,11 +10,17 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-    - name: Set up Node.js
+      - name: Checkout repository
+        uses: actions/checkout@v4  
+
+      - name: Verify repository contents
+        run: ls -la  
+
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '16'
-          cache: 'npm'
+          cache: 'npm' 
 
       - name: Cache npm dependencies
         uses: actions/cache@v3
@@ -23,12 +29,6 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-            
-      - name: Checkout repository
-        uses: actions/checkout@v4  
-
-      - name: Verify repository contents
-        run: ls -la  
 
       - name: Install dependencies
         run: npm ci  
