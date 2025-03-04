@@ -1,0 +1,19 @@
+name: Bad CI/CD
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        run: git clone https://github.com/user/repo.git
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Deploy to production
+        run: |
+          echo "Deploying..."
+          ssh root@server "cd /app && git pull"
