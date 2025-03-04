@@ -11,12 +11,16 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  
+
+      - name: Verify repository contents
+        run: ls -la  
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '16'
+          cache: 'npm'
 
       - name: Cache npm dependencies
         uses: actions/cache@v3
@@ -25,14 +29,9 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      
 
       - name: Install dependencies
-        run: npm install
-        
+        run: npm ci  
 
-      - name: Set timeouts
-        run: |
-           echo "Running tasks with timeouts"
-           timeout 10s npm run build
-  
+      - name: Build project with timeout
+        run: timeout 10s npm run build 
