@@ -1,19 +1,27 @@
 name: Bad CI/CD
-
-on: [push, pull_request]
-
+on: 
+  push:
+    branches: 
+      - main
 jobs:
+
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        run: git clone https://github.com/user/repo.git
+      - name: i without cache
+        run: 
+          npm init -y
+          npm install
+      
+      - name: no timeouts
+        run: 
+          echo "No timeouts"
+          sleep 5
+      
+      - name: Checkout
+        uses: actions/checkout@v1
 
       - name: Install dependencies
-        run: npm install
-
-      - name: Deploy to production
-        run: |
-          echo "Deploying..."
-          ssh root@server "cd /app && git pull"
+        run: 
+          sudo apt-get update
+          sudo apt-get install -y nodejs npm
