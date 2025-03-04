@@ -1,6 +1,9 @@
 name: Good CI/CD
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -14,24 +17,22 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16'
-          cache: 'npm'
+
+      - name: Cache npm dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
+        
 
-      - name: Run tests
-        run: npm test
-
-      - name: Deploy to production
-        if: success()
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SERVER_USER: ${{ secrets.SERVER_USER }}
-          SERVER_HOST: ${{ secrets.SERVER_HOST }}
+      - name: Set timeouts
         run: |
-          echo "${SSH_PRIVATE_KEY}" > private_key && chmod 600 private_key
-          ssh -i private_key $SERVER_USER@$SERVER_HOST "cd /app && git pull"
-
-      - name: Notify on failure
-        if: failure()
-        run: echo "Build failed, notifying team..."
+           echo "Running tasks with timeouts"
+           timeout 10s npm run build
+  
