@@ -1,0 +1,42 @@
+IT Tower,Service Family,Service Type,Service Sub Type,Service Usage Type,Meter Category,Meter Sub-Category,Meter Name,Consumed Service
+Cloud services,Developer tools,App center,Mobile and dekstop DevOps,Integration,App Center,,,microsoft.appcenter
+Cloud services,Developer tools,App configuration,Configuration management,Free instances,App Configuration,,Free Instances,microsoft.appconfiguration
+Cloud services,Developer tools,App services,API management,Securing API,App Services,API Management,,Microsoft.ApiManagement
+Cloud services,Developer tools,App services,Automation,Automation tools,App Services,Automation,,Microsoft.Automation
+Cloud services,Security and Identity,Key vault,Key Vault,Hardware Security Module key,App Services,Key Vault,HSM-key,Microsoft.KeyVault
+Cloud services,Security and Identity,Key vault,Key Vault,Operations,App Services,Key Vault,Operations%,Microsoft.KeyVault
+Cloud services,Application Services,Automation service,Automation,Desired State Configuration,App Services,Automation,%Automation DSC%,microsoft.automation
+Cloud services,Application Services,Azure monitor,Log Analytics,Operational Insights,App Services,Operational Insights,,microsoft.operationalinsights
+Cloud services,Application Services,Azure monitor,Application analytics,Collecting and analyzing telemetry data,App Services,Operational Insights,,Operational Insights
+Cloud services,Application Services,Azure monitor,App service,Log data ingestion,App Services,App Services,Log Analytics Data Ingestion,microsoft.insights
+Cloud services,Application Services,Azure monitor,Telemetry data export service,Telemetry data export,Application Insights,Basic,Continuous Export,microsoft.insights
+Cloud services,Application Services,Azure monitor,Data inspection,Data ingestion,Application Insights,Enterprise,Overage Data,microsoft.insights
+Cloud services,Application Services,Azure monitor,Enterprise Node,Telemetry data ingestion,Application Insights,,Enterprise Node,microsoft.insights
+Cloud services,Application Services,Azure monitor,Enterprise Node,Billing and cost consideration,Application Insights,,Enterprise Overage Data,microsoft.insights
+Cloud services,Application Services,Azure monitor,Watcher logs,Runbook monitoring,Automation and Control,OMS,Automation Watcher,Microsoft.Automation
+Cloud services,Application Services,Azure monitor,Update Management,Update Deployment,Automation and Control,OMS,Update Management,Microsoft.Automation
+Cloud services,Application Services,Azure monitor,Runbooks,Job execution,Automation,,,Microsoft.Automation
+Cloud services,Application Services,Azure portal,App service environment,App service plan,Azure App Service,Isolated Plan%,,Microsoft.Web
+Cloud services,Application Services,Azure portal,Blob storage,Object storage,Data Services,,,
+Database,Database,Azure portal,Compute optimized,100 Data Warehouse Units,SQL Data Warehouse,Compute Optimized%,100 DWUs,Microsoft.Sql
+Networking,Networking,Azure bastion,Bastion Host,Basic,Azure Bastion,,Basic,Microsoft.Network
+Networking,Networking,Azure bastion,Bastion Host,Data Transfer (Outbound),Azure Bastion,,Data Transfer%,Microsoft.Network
+Networking,Networking,Bandwidth,Data Transfer Out,Data Transfer (in GB),Bandwidth,,Data Transfer%,%Compute
+Cloud services,Management tools,Bandwidth,API management,Bandwidth data transfer,Bandwidth,,%Data Transfer%,Microsoft.ApiManagement
+Compute,Compute,Bandwidth,Batch processing,Data transfer,Bandwidth,,%Data Transfer%,Microsoft.Batch
+Storage,Storage and Content delivery,Bandwidth,Blob storage,Storage transfer,Bandwidth,,%Data Transfer%,%Storage
+Cloud services,Security and Identity,Azure Firewall,Firewall Deployment,Firewall Traffic Processing,Azure Firewall,,Deployment,Microsoft.Network
+Cloud services,Security and Identity,Azure Firewall,Firewall Traffic,Network security,Azure Firewall,,Data Processed,Microsoft.Network
+Cloud services,Mobile Services,Notification Hubs,Push Notifications,Transmissions,Notification Hubs,,,Microsoft.NotificationHubs
+Cloud services,Analytics,Power BI,Embedded,Embedded capacity,Power BI,Embedded,,Microsoft.PowerBI
+Cloud services,Analytics,Power BI,Embedded,Capacity-based usage,Power BI Embedded,Power BI Embedded,A1 Node,Microsoft.PowerBIDedicated
+Cloud services,Analytics,Power BI,Embedded,A1 Node,Power BI Embedded,,A1,Microsoft.PowerBIDedicated
+Cloud services,Security and Identity,Recovery Services,Backup Instance,Protected data,Recovery Services,Backup,Protected Instances,
+Cloud services,Security and Identity,Recovery Services,Site recovery,VM replicated,Recovery Services,Site Recovery,VM replicated to Azure,Microsoft.RecoveryServices
+Compute,Compute,Virtual Machines,Virtual Machines,Licenses,Virtual Machines Licenses,,,
+Compute,Compute,Virtual Machines,Red Hat Enterprise Linux,Virtual Machine Instance usage (in hours),Virtual Machines,Red Hat Enterprise Linux%,Compute Hours,%Compute
+Compute,Compute,Virtual Machines,SQL Server,Virtual Machine Instance usage (in hours),Virtual Machines,SQL Server%,Compute Hours,
+Compute,Compute,Virtual Machines,BizTalk Server,Virtual Machine Instance usage (in hours),Virtual Machines,BizTalk Server,Compute Hours,%Compute
+Compute,Compute,Virtual Machines,Azure spring app,Virtual Machine Instance usage (in hours),Virtual Machines,BizTalk Server Standard%,Compute Hours,%Compute
+Compute,Compute,Virtual Machines,Azure spring app,Virtual Machine Instance usage (in hours),Virtual Machines,Java Development Environment%,Compute Hours,Unassigned
+Compute,Compute,Virtual Machines,Reserved Virtual Machines,Virtual Machine Instance usage (in hours),Virtual Machines,Reservation%,Compute Hours,%Compute
