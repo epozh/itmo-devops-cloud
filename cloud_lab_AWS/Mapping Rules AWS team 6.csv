@@ -1,4 +1,4 @@
-IT Tower;Service Family;Service Type;Service Sub Type;Service Usage Type;Product Code;Usage Type; [lineItem/Operation];lineItem/LineItemDescription
+IT Tower,Service Family,Service Type,Service Sub Type,Service Usage Type,Product Code;Usage Type; [lineItem/Operation];lineItem/LineItemDescription
 Storage;Storage;Amazon Elastic File System;Additional costs;Tax;AmazonEFS;;;Tax%
 Storage;Storage;Amazon Elastic File System;Storage;Timed storage (in byte-hours);AmazonEFS;%TimedStorage-ByteHrs;;
 Storage;Storage;Amazon Elastic File System;Storage;Infrequent access data storage (in bytes);AmazonEFS;%IADataAccess-Bytes;;
